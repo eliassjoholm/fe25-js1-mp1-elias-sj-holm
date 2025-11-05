@@ -21,7 +21,7 @@ for (let i=0; i<rows.length; i++) {
 
 const numList1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const numList2 = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
-const numList3 = ["kys", "två", "tre", "fyra", "fem", "sex", "sju", "åtta", "nio", "tio"];
+const numList3 = ["ett", "två", "tre", "fyra", "fem", "sex", "sju", "åtta", "nio", "tio"];
 const divBoxBody = document.createElement("div");
 const idk = document.createElement("div");
 const divBoxLow = document.createElement("div");
@@ -90,13 +90,15 @@ for (let i=0; i<numList2.length; i++) {
     divBoxMid.style.width = "70px";
     pRa.style.margin = "0";
     pRa.style.height = "30px";
+    pRa.style.textAlign = "center"
 
 
 
-    if (i === 0 || i === 2 || i === 6 || i === 8) {
+
+    if (i === 3 || i === 5 || i === 7 || i === 9) {
     pRa.style.backgroundColor = "black";
     pRa.style.color = "white"; 
-  } else if (i === 4) {
+  } else if (i === 1) {
     pRa.style.backgroundColor = "#a8a8f0";
     pRa.style.color = "white";
   } else {
@@ -118,15 +120,16 @@ for (let i=0; i<numList3.length; i++) {
     divBoxHigh.style.width = "70px";
     pRe.style.margin = "0";
     pRe.style.height = "30px";
+    pRe.style.textAlign = "right"
     console.log("---");
     console.log(numList3[i]);
 
 
 
-    if (i === 0 || i === 2 || i === 6 || i === 8) {
+    if (i === 0 || i === 2 || i === 4 || i === 6 || i === 8) {
     pRe.style.backgroundColor = "black";
     pRe.style.color = "white"; 
-  } else if (i === 4) {
+  } else if (i === 5) {
     pRe.style.backgroundColor = "#a8a8f0";
     pRe.style.color = "white";
   } else {
